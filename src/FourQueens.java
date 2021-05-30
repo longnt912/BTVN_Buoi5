@@ -1,7 +1,6 @@
 public class FourQueens {
         static final int N = 4;
 
-        // print the final solution matrix
         static void printSolution(int board[][]) {
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++)
@@ -11,7 +10,6 @@ public class FourQueens {
             }
         }
 
-        // function to check whether the position is safe or not
         static boolean isSafe(int board[][], int row, int col) {
             int i, j;
             for (i = 0; i < col; i++)
